@@ -47,4 +47,4 @@ exec docker run \
   --volume "$PWD":/code \
   --volume /tmp/cc:/tmp/cc \
   --volume /var/run/docker.sock:/var/run/docker.sock \
-  codeclimate/codeclimate "$@"
+  balabhadra/codeclimate "$@"
