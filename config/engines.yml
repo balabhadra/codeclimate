@@ -101,3 +101,13 @@ phpcodesniffer:
     - "**.php"
     - "**.module"
     - "**.inc"
+engine_test:
+  image: balabhadra/engine_test   
+  description: Debug Code Sniffer
+  community: true
+  enable_regexps:
+    - \.rb$
+    - \.js$ 
+  default_ratings_paths:
+    - "**.rb"
+    - "**.js"
