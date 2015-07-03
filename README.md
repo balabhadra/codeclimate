@@ -60,8 +60,8 @@ docker run \
 ### Anywhere
 
 ```console
-curl -L https://github.com/codeclimate/codeclimate/archive/v0.0.10.tar.gz | tar xvz
-cd codeclimate-* && sudo make install
+git clone git@github.com:balabhadra/codeclimate.git
+cd codeclimate && sudo make install
 ```
 
 ## Commands
