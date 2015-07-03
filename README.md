@@ -45,18 +45,6 @@ said, it can be unwieldy to invoke such a command on a regular basis.
 For this reason, we also provide packages that include a small wrapper script
 for the above invocation:
 
-### OS X
-
-```console
-docker run \
-  --interactive --tty --rm \
-  --env CODE_PATH="$PWD" \
-  --volume "$PWD":/code \
-  --volume /var/run/docker.sock:/var/run/docker.sock \
-  --volume /tmp/cc:/tmp/cc \
-  balabhadra/codeclimate help
-```
-
 ### Anywhere
 
 ```console
