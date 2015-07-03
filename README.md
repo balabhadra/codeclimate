@@ -21,7 +21,7 @@ On OS X, we recommend using [boot2docker](http://boot2docker.io/).
 ## Installation
 
 ```console
-docker pull codeclimate/codeclimate
+docker pull balabhadra/codeclimate
 ```
 
 ## Usage
@@ -48,8 +48,13 @@ for the above invocation:
 ### OS X
 
 ```console
-brew tap codeclimate/formulae
-brew install codeclimate
+docker run \
+  --interactive --tty --rm \
+  --env CODE_PATH="$PWD" \
+  --volume "$PWD":/code \
+  --volume /var/run/docker.sock:/var/run/docker.sock \
+  --volume /tmp/cc:/tmp/cc \
+  balabhadra/codeclimate help
 ```
 
 ### Anywhere
