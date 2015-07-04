@@ -21,7 +21,7 @@ On OS X, we recommend using [boot2docker](http://boot2docker.io/).
 ## Installation
 
 ```console
-docker pull codeclimate/codeclimate
+docker pull balabhadra/codeclimate
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ docker run \
   --volume "$PWD":/code \
   --volume /var/run/docker.sock:/var/run/docker.sock \
   --volume /tmp/cc:/tmp/cc \
-  codeclimate/codeclimate help
+  balabhadra/codeclimate help
 ```
 
 ## Packages
@@ -45,18 +45,11 @@ said, it can be unwieldy to invoke such a command on a regular basis.
 For this reason, we also provide packages that include a small wrapper script
 for the above invocation:
 
-### OS X
-
-```console
-brew tap codeclimate/formulae
-brew install codeclimate
-```
-
 ### Anywhere
 
 ```console
-curl -L https://github.com/codeclimate/codeclimate/archive/v0.0.10.tar.gz | tar xvz
-cd codeclimate-* && sudo make install
+git clone git@github.com:balabhadra/codeclimate.git
+cd codeclimate && sudo make install
 ```
 
 ## Commands
